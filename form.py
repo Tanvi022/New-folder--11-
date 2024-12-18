@@ -6,18 +6,13 @@ def create_database():
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS Student (
             Fullname TEXT,
-            Email TEXT,
-            Gender TEXT,
-            Country TEXT,
-            Programming TEXT
+@@ -18,11 +13,11 @@ def create_database():
         )
     ''')
-    
-    
     conn.commit()
     conn.close()
-
 
 create_database()
 
 print("Database and table created successfully!")
+
